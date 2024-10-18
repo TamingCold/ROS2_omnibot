@@ -1,0 +1,33 @@
+# ign topic subscribed by JointController plugin
+- ros_topic_name: "left_vel"
+  gz_topic_name: "left_vel"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "ignition.msgs.Double"
+  direction: ROS_TO_GZ
+
+# ign topic subscribed by JointController plugin
+- ros_topic_name: "right_vel"
+  gz_topic_name: "right_vel"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "ignition.msgs.Double"
+  direction: ROS_TO_GZ
+
+  # ign topic subscribed by JointController plugin
+- ros_topic_name: "front_vel"
+  gz_topic_name: "front_vel"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "ignition.msgs.Double"
+  direction: ROS_TO_GZ
+
+# ign tf to ROS tf
+- ros_topic_name: "/tf"
+  gz_topic_name: "/model/robot_1/pose"
+  ros_type_name: "tf2_msgs/msg/TFMessage"
+  gz_type_name: "ignition.msgs.Pose_V"
+  direction: GZ_TO_ROS
+
+  ros_topic_name: "/tf"
+  gz_topic_name: "/model/robot_2/pose"
+  ros_type_name: "tf2_msgs/msg/TFMessage"
+  gz_type_name: "ignition.msgs.Pose_V"
+  direction: GZ_TO_ROS
