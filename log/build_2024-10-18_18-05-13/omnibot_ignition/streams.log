@@ -1,0 +1,102 @@
+[0.198s] Invoking command in '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition -DCMAKE_INSTALL_PREFIX=/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition
+[0.275s] -- The C compiler identification is GNU 11.4.0
+[0.341s] -- The CXX compiler identification is GNU 11.4.0
+[0.348s] -- Detecting C compiler ABI info
+[0.417s] -- Detecting C compiler ABI info - done
+[0.423s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.423s] -- Detecting C compile features
+[0.423s] -- Detecting C compile features - done
+[0.426s] -- Detecting CXX compiler ABI info
+[0.502s] -- Detecting CXX compiler ABI info - done
+[0.513s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.513s] -- Detecting CXX compile features
+[0.513s] -- Detecting CXX compile features - done
+[0.518s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.649s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.729s] -- Found ros_gz_bridge: 0.244.15 (/opt/ros/humble/share/ros_gz_bridge/cmake)
+[0.772s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.776s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.782s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.791s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.802s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.834s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.836s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.941s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.976s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.026s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.043s] -- Looking for pthread.h
+[1.135s] -- Looking for pthread.h - found
+[1.135s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.217s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.218s] -- Found Threads: TRUE  
+[1.313s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.405s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.742s] -- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)
+[1.791s] -- Configuring done
+[1.797s] -- Generating done
+[1.798s] -- Build files have been written to: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition
+[1.806s] Invoked command in '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition -DCMAKE_INSTALL_PREFIX=/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition
+[1.809s] Invoking command in '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition -- -j12 -l12
+[1.877s] [ 50%] [32mBuilding CXX object CMakeFiles/omni_drive.dir/src/omni_drive.cpp.o[0m
+[3.431s] [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:[m[K In constructor ‘[01m[KOmniDrive::OmniDrive()[m[K’:
+[3.431s] [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:50:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose_sub_robot1_[m[K’ was not declared in this scope
+[3.431s]    50 |   [01;31m[Kpose_sub_robot1_[m[K = this->create_subscription<geometry_msgs::msg::PoseStamped>(
+[3.431s]       |   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[3.431s] [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:50:68:[m[K [01;31m[Kerror: [m[K‘[01m[KPoseStamped[m[K’ is not a member of ‘[01m[Kgeometry_msgs::msg[m[K’
+[3.432s]    50 |   pose_sub_robot1_ = this->create_subscription<geometry_msgs::msg::[01;31m[KPoseStamped[m[K>(
+[3.432s]       |                                                                    [01;31m[K^~~~~~~~~~~[m[K
+[3.432s] [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:51:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose_callback[m[K’ is not a member of ‘[01m[KOmniDrive[m[K’
+[3.432s]    51 |     "/robot_1/pose", qos, std::bind(&OmniDrive::[01;31m[Kpose_callback[m[K, this, std::placeholders::_1, "robot_1"));
+[3.432s]       |                                                 [01;31m[K^~~~~~~~~~~~~[m[K
+[3.438s] [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:53:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose_sub_robot2_[m[K’ was not declared in this scope
+[3.438s]    53 |   [01;31m[Kpose_sub_robot2_[m[K = this->create_subscription<geometry_msgs::msg::PoseStamped>(
+[3.438s]       |   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[3.438s] [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:53:68:[m[K [01;31m[Kerror: [m[K‘[01m[KPoseStamped[m[K’ is not a member of ‘[01m[Kgeometry_msgs::msg[m[K’
+[3.438s]    53 |   pose_sub_robot2_ = this->create_subscription<geometry_msgs::msg::[01;31m[KPoseStamped[m[K>(
+[3.438s]       |                                                                    [01;31m[K^~~~~~~~~~~[m[K
+[3.438s] [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:54:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose_callback[m[K’ is not a member of ‘[01m[KOmniDrive[m[K’
+[3.438s]    54 |     "/robot_2/pose", qos, std::bind(&OmniDrive::[01;31m[Kpose_callback[m[K, this, std::placeholders::_1, "robot_2"));
+[3.439s]       |                                                 [01;31m[K^~~~~~~~~~~~~[m[K
+[3.442s] [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:57:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_pub_[m[K’ was not declared in this scope
+[3.442s]    57 |   [01;31m[Ktf_pub_[m[K = this->create_publisher<tf2_msgs::msg::TFMessage>("/tf", qos);
+[3.442s]       |   [01;31m[K^~~~~~~[m[K
+[3.446s] [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:57:36:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf2_msgs[m[K’ was not declared in this scope
+[3.446s]    57 |   tf_pub_ = this->create_publisher<[01;31m[Ktf2_msgs[m[K::msg::TFMessage>("/tf", qos);
+[3.446s]       |                                    [01;31m[K^~~~~~~~[m[K
+[3.446s] [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:57:19:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[3.446s]    57 |   tf_pub_ = this->[01;31m[Kcreate_publisher<tf2_msgs::msg::TFMessage>[m[K("/tf", qos);
+[3.446s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.446s] [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:57:61:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KOmniDrive::create_publisher<<expression error> >(const char [4], rclcpp::QoS&)[m[K’
+[3.446s]    57 |   tf_pub_ = [01;31m[Kthis->create_publisher<tf2_msgs::msg::TFMessage>("/tf", qos)[m[K;
+[3.446s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.447s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+[3.447s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.447s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[3.447s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.447s]                  from [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/include/omnibot_ignition/omni_drive.hpp:23[m[K,
+[3.447s]                  from [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:17[m[K:
+[3.447s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[3.447s]    73 | [01;36m[KNode[m[K::create_publisher(
+[3.447s]       | [01;36m[K^~~~[m[K
+[3.447s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.447s] [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:57:61:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.447s]    57 |   tf_pub_ = [01;31m[Kthis->create_publisher<tf2_msgs::msg::TFMessage>("/tf", qos)[m[K;
+[3.447s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[3.455s] [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:[m[K At global scope:
+[3.455s] [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:86:57:[m[K [01;31m[Kerror: [m[K‘[01m[KPoseStamped[m[K’ in namespace ‘[01m[Kgeometry_msgs::msg[m[K’ does not name a type
+[3.456s]    86 | void OmniDrive::pose_callback(const geometry_msgs::msg::[01;31m[KPoseStamped[m[K::SharedPtr msg, const std::string &robot_name)
+[3.456s]       |                                                         [01;31m[K^~~~~~~~~~~[m[K
+[3.456s] [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:86:80:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+[3.456s]    86 | void OmniDrive::pose_callback(const geometry_msgs::msg::PoseStamped::SharedPtr [01;31m[Kmsg[m[K, const std::string &robot_name)
+[3.456s]       |                                                                                [01;31m[K^~~[m[K
+[3.456s] [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:86:79:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+[3.456s]    86 | void OmniDrive::pose_callback[34m[K([m[Kconst geometry_msgs::msg::PoseStamped::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K, const std::string &robot_name)
+[3.456s]       |                              [34m[K~[m[K                                                [01;31m[K^[m[K[32m[K~~~[m[K
+[3.456s]       |                                                                               [32m[K)[m[K
+[3.456s] [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:86:80:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmsg[m[K’
+[3.456s]    86 | void OmniDrive::pose_callback(const geometry_msgs::msg::PoseStamped::SharedPtr [01;31m[Kmsg[m[K, const std::string &robot_name)
+[3.456s]       |                                                                                [01;31m[K^~~[m[K
+[5.158s] gmake[2]: *** [CMakeFiles/omni_drive.dir/build.make:76: CMakeFiles/omni_drive.dir/src/omni_drive.cpp.o] Error 1
+[5.159s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/omni_drive.dir/all] Error 2
+[5.159s] gmake: *** [Makefile:146: all] Error 2
+[5.162s] Invoked command in '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition -- -j12 -l12

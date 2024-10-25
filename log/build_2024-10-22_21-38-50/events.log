@@ -1,0 +1,188 @@
+[0.000000] (-) TimerEvent: {}
+[0.000177] (omnibot_control) JobQueued: {'identifier': 'omnibot_control', 'dependencies': OrderedDict()}
+[0.000217] (omnibot_ignition) JobQueued: {'identifier': 'omnibot_ignition', 'dependencies': OrderedDict()}
+[0.000246] (omnibot_control) JobStarted: {'identifier': 'omnibot_control'}
+[0.005051] (omnibot_ignition) JobStarted: {'identifier': 'omnibot_ignition'}
+[0.099528] (-) TimerEvent: {}
+[0.177873] (omnibot_ignition) JobProgress: {'identifier': 'omnibot_ignition', 'progress': 'cmake'}
+[0.178962] (omnibot_ignition) JobProgress: {'identifier': 'omnibot_ignition', 'progress': 'build'}
+[0.179117] (omnibot_ignition) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition', '--', '-j12', '-l12'], 'cwd': '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'chongzhiw'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/chongzhiw'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src'), ('TERM_PROGRAM_VERSION', '1.94.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '953'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1151'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6824d5a1c71f1dd29356873a6710e827'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4080'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'chongzhiw'), ('JOURNAL_STREAM', '8:16473'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'chongzhiw'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/chongzhiw/.local/bin:/opt/ros/humble/bin:/home/chongzhiw/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/chongzhiw-ThinkPad-X1-Yoga-Gen-8:@/tmp/.ICE-unix/1151,unix/chongzhiw-ThinkPad-X1-Yoga-Gen-8:/tmp/.ICE-unix/1151'), ('INVOCATION_ID', '8c726ed0475e46c1b983272a5b8261b2'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.SNTUV2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-8631f0cef1.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '31'), ('AMENT_PREFIX_PATH', '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition:/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_control:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6824d5a1c71f1dd29356873a6710e827'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition:/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_control:/opt/ros/humble')]), 'shell': False}
+[0.199686] (-) TimerEvent: {}
+[0.216505] (omnibot_ignition) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target omni_drive\x1b[0m\n'}
+[0.232116] (omnibot_ignition) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/omni_drive.dir/src/omni_drive.cpp.o\x1b[0m\n'}
+[0.299829] (-) TimerEvent: {}
+[0.400205] (-) TimerEvent: {}
+[0.436365] (omnibot_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/omnibot_control', 'build', '--build-base', '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_control/build', 'install', '--record', '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_control/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_control', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_AU:en', 'USER': 'chongzhiw', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/chongzhiw', 'CHROME_DESKTOP': 'code-url-handler.desktop', 'OLDPWD': '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src', 'TERM_PROGRAM_VERSION': '1.94.2', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '953', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '1151', 'IM_CONFIG_CHECK_ENV': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=6824d5a1c71f1dd29356873a6710e827', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4080', '_colcon_cd_root': '/opt/ros/humble/', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'chongzhiw', 'JOURNAL_STREAM': '8:16473', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'chongzhiw', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/home/chongzhiw/.local/bin:/opt/ros/humble/bin:/home/chongzhiw/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/chongzhiw-ThinkPad-X1-Yoga-Gen-8:@/tmp/.ICE-unix/1151,unix/chongzhiw-ThinkPad-X1-Yoga-Gen-8:/tmp/.ICE-unix/1151', 'INVOCATION_ID': '8c726ed0475e46c1b983272a5b8261b2', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.SNTUV2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-8631f0cef1.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '31', 'AMENT_PREFIX_PATH': '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition:/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_control:/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_control', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=6824d5a1c71f1dd29356873a6710e827', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_control/lib/python3.10/site-packages:/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition'}, 'shell': False}
+[0.500407] (-) TimerEvent: {}
+[0.594339] (omnibot_control) StdoutLine: {'line': b'running egg_info\n'}
+[0.594694] (omnibot_control) StdoutLine: {'line': b'writing ../../build/omnibot_control/omnibot_control.egg-info/PKG-INFO\n'}
+[0.594956] (omnibot_control) StdoutLine: {'line': b'writing dependency_links to ../../build/omnibot_control/omnibot_control.egg-info/dependency_links.txt\n'}
+[0.595096] (omnibot_control) StdoutLine: {'line': b'writing entry points to ../../build/omnibot_control/omnibot_control.egg-info/entry_points.txt\n'}
+[0.595201] (omnibot_control) StdoutLine: {'line': b'writing requirements to ../../build/omnibot_control/omnibot_control.egg-info/requires.txt\n'}
+[0.595297] (omnibot_control) StdoutLine: {'line': b'writing top-level names to ../../build/omnibot_control/omnibot_control.egg-info/top_level.txt\n'}
+[0.596142] (omnibot_control) StdoutLine: {'line': b"reading manifest file '../../build/omnibot_control/omnibot_control.egg-info/SOURCES.txt'\n"}
+[0.596330] (omnibot_control) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[0.596506] (omnibot_control) StdoutLine: {'line': b"writing manifest file '../../build/omnibot_control/omnibot_control.egg-info/SOURCES.txt'\n"}
+[0.596599] (omnibot_control) StdoutLine: {'line': b'running build\n'}
+[0.596699] (omnibot_control) StdoutLine: {'line': b'running build_py\n'}
+[0.596879] (omnibot_control) StdoutLine: {'line': b'running install\n'}
+[0.597143] (omnibot_control) StdoutLine: {'line': b'running install_lib\n'}
+[0.597755] (omnibot_control) StdoutLine: {'line': b'running install_data\n'}
+[0.597892] (omnibot_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.599013] (omnibot_control) StdoutLine: {'line': b"removing '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_control/lib/python3.10/site-packages/omnibot_control-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.599275] (omnibot_control) StdoutLine: {'line': b'Copying ../../build/omnibot_control/omnibot_control.egg-info to /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_control/lib/python3.10/site-packages/omnibot_control-0.0.0-py3.10.egg-info\n'}
+[0.599436] (omnibot_control) StdoutLine: {'line': b'running install_scripts\n'}
+[0.600533] (-) TimerEvent: {}
+[0.614066] (omnibot_control) StdoutLine: {'line': b'Installing robot_control script to /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_control/lib/omnibot_control\n'}
+[0.614367] (omnibot_control) StdoutLine: {'line': b"writing list of installed files to '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_control/install.log'\n"}
+[0.633348] (omnibot_control) CommandEnded: {'returncode': 0}
+[0.639745] (omnibot_control) JobEnded: {'identifier': 'omnibot_control', 'rc': 0}
+[0.700674] (-) TimerEvent: {}
+[0.801004] (-) TimerEvent: {}
+[0.901388] (-) TimerEvent: {}
+[1.001828] (-) TimerEvent: {}
+[1.102242] (-) TimerEvent: {}
+[1.202599] (-) TimerEvent: {}
+[1.302970] (-) TimerEvent: {}
+[1.403398] (-) TimerEvent: {}
+[1.503713] (-) TimerEvent: {}
+[1.604116] (-) TimerEvent: {}
+[1.704491] (-) TimerEvent: {}
+[1.804813] (-) TimerEvent: {}
+[1.905163] (-) TimerEvent: {}
+[2.005513] (-) TimerEvent: {}
+[2.105823] (-) TimerEvent: {}
+[2.206200] (-) TimerEvent: {}
+[2.306586] (-) TimerEvent: {}
+[2.406909] (-) TimerEvent: {}
+[2.507291] (-) TimerEvent: {}
+[2.607678] (-) TimerEvent: {}
+[2.708018] (-) TimerEvent: {}
+[2.808307] (-) TimerEvent: {}
+[2.908694] (-) TimerEvent: {}
+[3.009040] (-) TimerEvent: {}
+[3.109406] (-) TimerEvent: {}
+[3.209760] (-) TimerEvent: {}
+[3.310184] (-) TimerEvent: {}
+[3.410536] (-) TimerEvent: {}
+[3.510874] (-) TimerEvent: {}
+[3.611176] (-) TimerEvent: {}
+[3.711504] (-) TimerEvent: {}
+[3.811882] (-) TimerEvent: {}
+[3.912347] (-) TimerEvent: {}
+[4.012677] (-) TimerEvent: {}
+[4.113055] (-) TimerEvent: {}
+[4.213473] (-) TimerEvent: {}
+[4.313830] (-) TimerEvent: {}
+[4.414200] (-) TimerEvent: {}
+[4.514546] (-) TimerEvent: {}
+[4.614870] (-) TimerEvent: {}
+[4.715185] (-) TimerEvent: {}
+[4.815526] (-) TimerEvent: {}
+[4.915841] (-) TimerEvent: {}
+[5.016262] (-) TimerEvent: {}
+[5.116639] (-) TimerEvent: {}
+[5.216934] (-) TimerEvent: {}
+[5.317274] (-) TimerEvent: {}
+[5.417615] (-) TimerEvent: {}
+[5.518016] (-) TimerEvent: {}
+[5.618387] (-) TimerEvent: {}
+[5.718773] (-) TimerEvent: {}
+[5.819146] (-) TimerEvent: {}
+[5.919520] (-) TimerEvent: {}
+[6.019811] (-) TimerEvent: {}
+[6.120188] (-) TimerEvent: {}
+[6.220557] (-) TimerEvent: {}
+[6.320887] (-) TimerEvent: {}
+[6.421232] (-) TimerEvent: {}
+[6.521544] (-) TimerEvent: {}
+[6.622034] (-) TimerEvent: {}
+[6.722337] (-) TimerEvent: {}
+[6.822752] (-) TimerEvent: {}
+[6.923065] (-) TimerEvent: {}
+[7.023399] (-) TimerEvent: {}
+[7.123668] (-) TimerEvent: {}
+[7.223968] (-) TimerEvent: {}
+[7.324260] (-) TimerEvent: {}
+[7.424547] (-) TimerEvent: {}
+[7.524849] (-) TimerEvent: {}
+[7.625201] (-) TimerEvent: {}
+[7.725539] (-) TimerEvent: {}
+[7.825869] (-) TimerEvent: {}
+[7.926235] (-) TimerEvent: {}
+[8.026623] (-) TimerEvent: {}
+[8.127045] (-) TimerEvent: {}
+[8.227414] (-) TimerEvent: {}
+[8.328023] (-) TimerEvent: {}
+[8.339820] (omnibot_ignition) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable omni_drive\x1b[0m\n'}
+[8.428124] (-) TimerEvent: {}
+[8.528453] (-) TimerEvent: {}
+[8.628793] (-) TimerEvent: {}
+[8.729152] (-) TimerEvent: {}
+[8.829642] (-) TimerEvent: {}
+[8.930417] (-) TimerEvent: {}
+[8.955377] (omnibot_ignition) StdoutLine: {'line': b'[100%] Built target omni_drive\n'}
+[8.971588] (omnibot_ignition) CommandEnded: {'returncode': 0}
+[9.029161] (omnibot_ignition) JobProgress: {'identifier': 'omnibot_ignition', 'progress': 'install'}
+[9.030545] (-) TimerEvent: {}
+[9.044483] (omnibot_ignition) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition'], 'cwd': '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'chongzhiw'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/chongzhiw'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src'), ('TERM_PROGRAM_VERSION', '1.94.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '953'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1151'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6824d5a1c71f1dd29356873a6710e827'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4080'), ('_colcon_cd_root', '/opt/ros/humble/'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'chongzhiw'), ('JOURNAL_STREAM', '8:16473'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'chongzhiw'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/chongzhiw/.local/bin:/opt/ros/humble/bin:/home/chongzhiw/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/chongzhiw-ThinkPad-X1-Yoga-Gen-8:@/tmp/.ICE-unix/1151,unix/chongzhiw-ThinkPad-X1-Yoga-Gen-8:/tmp/.ICE-unix/1151'), ('INVOCATION_ID', '8c726ed0475e46c1b983272a5b8261b2'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.SNTUV2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-8631f0cef1.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '31'), ('AMENT_PREFIX_PATH', '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition:/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_control:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6824d5a1c71f1dd29356873a6710e827'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition:/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_control:/opt/ros/humble')]), 'shell': False}
+[9.064249] (omnibot_ignition) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.064474] (omnibot_ignition) StdoutLine: {'line': b'-- Installing: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/lib/omnibot_ignition/omni_drive\n'}
+[9.068916] (omnibot_ignition) StdoutLine: {'line': b'-- Set runtime path of "/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/lib/omnibot_ignition/omni_drive" to ""\n'}
+[9.069104] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//launch\n'}
+[9.069244] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//launch/robot_state_publisher.launch.py\n'}
+[9.069337] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//launch/spawn_turtlebot3.launch.py\n'}
+[9.069513] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//launch/old_launch_files\n'}
+[9.069662] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//launch/old_launch_files/turtlebot3_dqn_stage1.launch.py\n'}
+[9.069719] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//launch/old_launch_files/turtlebot3_dqn_stage3.launch.py\n'}
+[9.069770] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//launch/old_launch_files/turtlebot3_dqn_stage2.launch.py\n'}
+[9.069820] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//launch/old_launch_files/turtlebot3_house.launch.py\n'}
+[9.069874] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//launch/old_launch_files/turtlebot3_dqn_stage4.launch.py\n'}
+[9.069926] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//launch/old_launch_files/turtlebot3_world.launch.py\n'}
+[9.069980] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//launch/empty_world.launch.py\n'}
+[9.070032] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//launch/spawn_turtlebot3_backup.launch.py\n'}
+[9.070084] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//params\n'}
+[9.070139] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//params/omni_sub_config.yaml\n'}
+[9.070195] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//params/omni_control_config.yaml\n'}
+[9.070260] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//rviz\n'}
+[9.070325] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//rviz/tb3_gazebo.rviz\n'}
+[9.070382] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//urdf\n'}
+[9.070502] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//urdf/xacro_files\n'}
+[9.070558] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//urdf/xacro_files/roller.xacro\n'}
+[9.070619] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//urdf/xacro_files/rim.xacro\n'}
+[9.070676] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//urdf/xacro_files/omni_bot.xacro\n'}
+[9.070734] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//urdf/omni_bot.urdf\n'}
+[9.070789] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//urdf/omni_base.STL\n'}
+[9.070844] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//urdf/omni_bot.sdf\n'}
+[9.070899] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//worlds\n'}
+[9.070953] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//worlds/turtlebot3_dqn_stage2.world\n'}
+[9.071021] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//worlds/turtlebot3_house.world\n'}
+[9.071090] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//worlds/turtlebot3_dqn_stage1.world\n'}
+[9.071147] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//worlds/turtlebot3_dqn_stage3.world\n'}
+[9.071207] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//worlds/empty_world.world\n'}
+[9.071297] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//worlds/turtlebot3_dqn_stage4.world\n'}
+[9.071349] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//worlds/turtlebot3_world.world\n'}
+[9.072023] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/include/\n'}
+[9.072127] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/include//omnibot_ignition\n'}
+[9.072192] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/include//omnibot_ignition/omni_drive.hpp\n'}
+[9.072254] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/ament_index/resource_index/package_run_dependencies/omnibot_ignition\n'}
+[9.072316] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/ament_index/resource_index/parent_prefix_path/omnibot_ignition\n'}
+[9.072499] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition/environment/ament_prefix_path.sh\n'}
+[9.073035] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition/environment/ament_prefix_path.dsv\n'}
+[9.073147] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition/environment/path.sh\n'}
+[9.073235] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition/environment/path.dsv\n'}
+[9.073573] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition/local_setup.bash\n'}
+[9.074376] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition/local_setup.sh\n'}
+[9.075792] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition/local_setup.zsh\n'}
+[9.076073] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition/local_setup.dsv\n'}
+[9.076256] (omnibot_ignition) StdoutLine: {'line': b'-- Installing: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition/package.dsv\n'}
+[9.076592] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/ament_index/resource_index/packages/omnibot_ignition\n'}
+[9.077536] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[9.077916] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[9.078500] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition/cmake/omnibot_ignitionConfig.cmake\n'}
+[9.078950] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition/cmake/omnibot_ignitionConfig-version.cmake\n'}
+[9.079277] (omnibot_ignition) StdoutLine: {'line': b'-- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition/package.xml\n'}
+[9.079517] (omnibot_ignition) CommandEnded: {'returncode': 0}
+[9.130694] (-) TimerEvent: {}
+[9.158173] (omnibot_ignition) JobEnded: {'identifier': 'omnibot_ignition', 'rc': 0}
+[9.159688] (-) EventReactorShutdown: {}

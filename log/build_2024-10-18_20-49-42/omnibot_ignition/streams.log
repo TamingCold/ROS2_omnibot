@@ -1,0 +1,12 @@
+[0.179s] Invoking command in '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition -- -j12 -l12
+[0.221s] [35m[1mConsolidate compiler generated dependencies of target omni_drive[0m
+[0.238s] [ 50%] [32mBuilding CXX object CMakeFiles/omni_drive.dir/src/omni_drive.cpp.o[0m
+[0.299s] In file included from [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:17[m[K:
+[0.299s] [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/include/omnibot_ignition/omni_drive.hpp:24:10:[m[K [01;31m[Kfatal error: [m[Ktf2_msgs/msg/tf_message.hpp: No such file or directory
+[0.299s]    24 | #include [01;31m[K"tf2_msgs/msg/tf_message.hpp"[m[K
+[0.300s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.300s] compilation terminated.
+[0.302s] gmake[2]: *** [CMakeFiles/omni_drive.dir/build.make:76: CMakeFiles/omni_drive.dir/src/omni_drive.cpp.o] Error 1
+[0.302s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/omni_drive.dir/all] Error 2
+[0.302s] gmake: *** [Makefile:146: all] Error 2
+[0.304s] Invoked command in '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition -- -j12 -l12

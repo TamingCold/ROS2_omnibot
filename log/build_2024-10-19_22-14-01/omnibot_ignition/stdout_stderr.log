@@ -1,0 +1,25 @@
+[35m[1mConsolidate compiler generated dependencies of target omni_drive[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/omni_drive.dir/src/omni_drive.cpp.o[0m
+In file included from [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:17[m[K:
+[01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/include/omnibot_ignition/omni_drive.hpp:67:28:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Ktf2_msgs::msg::TFMessage OmniDrive::pose_sub_robot_[m[K’
+   67 |   tf2_msgs::msg::TFMessage [01;31m[Kpose_sub_robot_[m[K;
+      |                            [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/include/omnibot_ignition/omni_drive.hpp:55:61:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Krclcpp::Subscription<tf2_msgs::msg::TFMessage_<std::allocator<void> > >::SharedPtr OmniDrive::pose_sub_robot_[m[K’
+   55 |   rclcpp::Subscription<tf2_msgs::msg::TFMessage>::SharedPtr [01;36m[Kpose_sub_robot_[m[K;
+      |                                                             [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:[m[K In member function ‘[01m[Kvoid OmniDrive::pose_callback(tf2_msgs::msg::TFMessage_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:91:22:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kgeometry_msgs::msg::TransformStamped[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::TransformStamped_<std::allocator<void> >[m[K’} and ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<tf2_msgs::msg::TFMessage_<std::allocator<void> > >[m[K’})
+   91 |   transformStamped = [01;31m[Kmsg[m[K;
+      |                      [01;31m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp:7[m[K,
+                 from [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/include/omnibot_ignition/omni_drive.hpp:23[m[K,
+                 from [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:17[m[K:
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:38:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::TransformStamped_<std::allocator<void> >& geometry_msgs::msg::TransformStamped_<std::allocator<void> >::operator=(const geometry_msgs::msg::TransformStamped_<std::allocator<void> >&)[m[K’
+   38 | struct [01;36m[KTransformStamped_[m[K
+      |        [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:38:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<tf2_msgs::msg::TFMessage_<std::allocator<void> > >[m[K’} to ‘[01m[Kconst geometry_msgs::msg::TransformStamped_<std::allocator<void> >&[m[K’
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:38:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::TransformStamped_<std::allocator<void> >& geometry_msgs::msg::TransformStamped_<std::allocator<void> >::operator=(geometry_msgs::msg::TransformStamped_<std::allocator<void> >&&)[m[K’
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:38:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<tf2_msgs::msg::TFMessage_<std::allocator<void> > >[m[K’} to ‘[01m[Kgeometry_msgs::msg::TransformStamped_<std::allocator<void> >&&[m[K’
+gmake[2]: *** [CMakeFiles/omni_drive.dir/build.make:76: CMakeFiles/omni_drive.dir/src/omni_drive.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/omni_drive.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

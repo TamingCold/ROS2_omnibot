@@ -1,0 +1,20 @@
+[0.177s] Invoking command in '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition -- -j12 -l12
+[0.224s] [35m[1mConsolidate compiler generated dependencies of target omni_drive[0m
+[0.239s] [ 50%] [32mBuilding CXX object CMakeFiles/omni_drive.dir/src/omni_drive.cpp.o[0m
+[1.744s] [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:[m[K In member function ‘[01m[Kvoid OmniDrive::pose_callback(tf2_msgs::msg::TFMessage_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.744s] [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:91:16:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Ktf2_msgs::msg::TFMessage[m[K’ {aka ‘[01m[Ktf2_msgs::msg::TFMessage_<std::allocator<void> >[m[K’} and ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<tf2_msgs::msg::TFMessage_<std::allocator<void> > >[m[K’})
+[1.744s]    91 |   tf_message = [01;31m[Kmsg[m[K;
+[1.744s]       |                [01;31m[K^~~[m[K
+[1.744s] In file included from [01m[K/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp:7[m[K,
+[1.744s]                  from [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/include/omnibot_ignition/omni_drive.hpp:24[m[K,
+[1.744s]                  from [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:17[m[K:
+[1.744s] [01m[K/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:36:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktf2_msgs::msg::TFMessage_<std::allocator<void> >& tf2_msgs::msg::TFMessage_<std::allocator<void> >::operator=(const tf2_msgs::msg::TFMessage_<std::allocator<void> >&)[m[K’
+[1.744s]    36 | struct [01;36m[KTFMessage_[m[K
+[1.745s]       |        [01;36m[K^~~~~~~~~~[m[K
+[1.745s] [01m[K/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:36:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<tf2_msgs::msg::TFMessage_<std::allocator<void> > >[m[K’} to ‘[01m[Kconst tf2_msgs::msg::TFMessage_<std::allocator<void> >&[m[K’
+[1.745s] [01m[K/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:36:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktf2_msgs::msg::TFMessage_<std::allocator<void> >& tf2_msgs::msg::TFMessage_<std::allocator<void> >::operator=(tf2_msgs::msg::TFMessage_<std::allocator<void> >&&)[m[K’
+[1.745s] [01m[K/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:36:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<tf2_msgs::msg::TFMessage_<std::allocator<void> > >[m[K’} to ‘[01m[Ktf2_msgs::msg::TFMessage_<std::allocator<void> >&&[m[K’
+[3.874s] gmake[2]: *** [CMakeFiles/omni_drive.dir/build.make:76: CMakeFiles/omni_drive.dir/src/omni_drive.cpp.o] Error 1
+[3.874s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/omni_drive.dir/all] Error 2
+[3.875s] gmake: *** [Makefile:146: all] Error 2
+[3.877s] Invoked command in '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition -- -j12 -l12

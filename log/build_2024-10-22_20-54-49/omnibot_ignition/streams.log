@@ -1,0 +1,61 @@
+[0.185s] Invoking command in '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_control:/opt/ros/humble /usr/bin/cmake --build /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition -- -j12 -l12
+[0.230s] [35m[1mConsolidate compiler generated dependencies of target omni_drive[0m
+[0.246s] [100%] Built target omni_drive
+[0.256s] Invoked command in '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_control:/opt/ros/humble /usr/bin/cmake --build /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition -- -j12 -l12
+[0.292s] Invoking command in '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_control:/opt/ros/humble /usr/bin/cmake --install /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition
+[0.301s] -- Install configuration: ""
+[0.301s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/lib/omnibot_ignition/omni_drive
+[0.301s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//launch
+[0.301s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//launch/robot_state_publisher.launch.py
+[0.301s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//launch/spawn_turtlebot3.launch.py
+[0.301s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//launch/old_launch_files
+[0.301s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//launch/old_launch_files/turtlebot3_dqn_stage1.launch.py
+[0.302s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//launch/old_launch_files/turtlebot3_dqn_stage3.launch.py
+[0.302s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//launch/old_launch_files/turtlebot3_dqn_stage2.launch.py
+[0.302s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//launch/old_launch_files/turtlebot3_house.launch.py
+[0.302s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//launch/old_launch_files/turtlebot3_dqn_stage4.launch.py
+[0.302s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//launch/old_launch_files/turtlebot3_world.launch.py
+[0.302s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//launch/empty_world.launch.py
+[0.302s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//launch/spawn_turtlebot3_backup.launch.py
+[0.302s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//params
+[0.302s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//params/omni_sub_config.yaml
+[0.302s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//params/omni_control_config.yaml
+[0.302s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//rviz
+[0.303s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//rviz/tb3_gazebo.rviz
+[0.303s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//urdf
+[0.303s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//urdf/xacro_files
+[0.303s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//urdf/xacro_files/roller.xacro
+[0.303s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//urdf/xacro_files/rim.xacro
+[0.303s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//urdf/xacro_files/omni_bot.xacro
+[0.303s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//urdf/omni_bot.urdf
+[0.303s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//urdf/omni_base.STL
+[0.303s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//urdf/omni_bot.sdf
+[0.304s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//worlds
+[0.304s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//worlds/turtlebot3_dqn_stage2.world
+[0.304s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//worlds/turtlebot3_house.world
+[0.304s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//worlds/turtlebot3_dqn_stage1.world
+[0.304s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//worlds/turtlebot3_dqn_stage3.world
+[0.304s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//worlds/empty_world.world
+[0.304s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//worlds/turtlebot3_dqn_stage4.world
+[0.304s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition//worlds/turtlebot3_world.world
+[0.305s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/include/
+[0.305s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/include//omnibot_ignition
+[0.305s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/include//omnibot_ignition/omni_drive.hpp
+[0.305s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/ament_index/resource_index/package_run_dependencies/omnibot_ignition
+[0.305s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/ament_index/resource_index/parent_prefix_path/omnibot_ignition
+[0.305s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition/environment/ament_prefix_path.sh
+[0.305s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition/environment/ament_prefix_path.dsv
+[0.305s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition/environment/path.sh
+[0.305s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition/environment/path.dsv
+[0.306s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition/local_setup.bash
+[0.306s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition/local_setup.sh
+[0.306s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition/local_setup.zsh
+[0.306s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition/local_setup.dsv
+[0.306s] -- Installing: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition/package.dsv
+[0.306s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/ament_index/resource_index/packages/omnibot_ignition
+[0.306s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.306s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.307s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition/cmake/omnibot_ignitionConfig.cmake
+[0.307s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition/cmake/omnibot_ignitionConfig-version.cmake
+[0.307s] -- Up-to-date: /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_ignition/share/omnibot_ignition/package.xml
+[0.307s] Invoked command in '/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/install/omnibot_control:/opt/ros/humble /usr/bin/cmake --install /home/chongzhiw/Gazebo_Repo/ROS2_omnibot/build/omnibot_ignition

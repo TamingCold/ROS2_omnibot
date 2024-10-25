@@ -46,6 +46,14 @@ OmniDrive::OmniDrive()
   cmd_vel_sub_ = this->create_subscription<geometry_msgs::msg::Twist>(
     "cmd_vel", qos, std::bind(&OmniDrive::twist_callback, this, std::placeholders::_1));
 
+  // New: Initialise subscribers for robot poses
+  pose_sub_robot_ = this->create_subscription<tf2_msgs::msg::TFMessage>(
+    "pose", qos, std::bind(&OmniDrive::pose_callback, this, std::placeholders::_1));
+
+
+  // New: Initialise publisher for tf
+  tf_pub_ = this->create_publisher<tf2_msgs::msg::TFMessage>("/tf", qos);
+
   // odom_sub_ = this->create_subscription<nav_msgs::msg::Odometry>(
   //   "odom", qos, std::bind(&OmniDrive::odom_callback, this, std::placeholders::_1));
 
@@ -71,6 +79,42 @@ void OmniDrive::twist_callback(const geometry_msgs::msg::Twist::SharedPtr msg)
   cmd_vel_.linear.x = msg->linear.x;
   cmd_vel_.linear.y = msg->linear.y;
   cmd_vel_.angular.z = msg->angular.z;
+}
+
+void OmniDrive::pose_callback(const tf2_msgs::msg::TFMessage::SharedPtr msg)
+{
+  // Check if there are any transforms in the message
+      if (msg->transforms.empty()) {
+          RCLCPP_WARN(this->get_logger(), "Received empty TFMessage");
+          return;
+      }
+
+      // Create a TFMessage to publish
+      tf2_msgs::msg::TFMessage tf_message;
+
+      // Set the header for the TF message
+      tf_message.transforms.resize(msg->transforms.size());
+      
+      // Loop through all transforms in the input message
+      for (size_t i = 0; i < msg->transforms.size(); ++i) {
+          const auto& input_transform = msg->transforms[i];
+
+          // Create a new TransformStamped message
+          geometry_msgs::msg::TransformStamped& transform = tf_message.transforms[i];
+          
+          // Set the header information
+          transform.header.stamp = this->get_clock()->now();
+          transform.header.frame_id = input_transform.header.frame_id;  // Parent frame
+          transform.child_frame_id = input_transform.child_frame_id;   // Child frame
+          
+          // Set translation and rotation
+          transform.transform.translation = input_transform.transform.translation;
+          transform.transform.rotation = input_transform.transform.rotation;
+      }
+
+
+  // Publish the TF message
+  tf_pub_->publish(tf_message);
 }
 
 /********************************************************************************
@@ -101,13 +145,17 @@ void OmniDrive::update_callback()
   double wz = cmd_vel_.angular.z;
 
   double wf, wl, wr;
-  double cos_pi_6 = 2.0/sqrt(3.0);
+  double cos_pi_6 = sqrt(3.0)/2.0;
   double sin_pi_6 = 0.5;
 
   // Inverse kinematics of 3-wheel omni drive robots
-  wf = -(-vy + robot_r*wz)/wheel_r;
-  wl = (-vx*cos_pi_6 + vy*sin_pi_6 + robot_r*wz)/wheel_r;
-  wr = (vx*cos_pi_6 + vy*sin_pi_6 + robot_r*wz)/wheel_r;
+  wf = (-vy - robot_r*wz)/wheel_r;
+  wl = (-vx*cos_pi_6 - vy*sin_pi_6 + robot_r*wz)/wheel_r;
+  wr = (vx*cos_pi_6 - vy*sin_pi_6 + robot_r*wz)/wheel_r;
+
+  //wf = (-vx + robot_r*wz)/wheel_r;
+  //wl = (-vx*sin_pi_6 + vy*cos_pi_6 + robot_r*wz)/wheel_r;
+  //wr = (-vx*sin_pi_6*5 + vy*cos_pi_6*5 + robot_r*wz)/wheel_r;
   
   update_joint_vels(wf, wl, wr);
 }

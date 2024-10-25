@@ -1,0 +1,3 @@
+[console_scripts]
+robot_control = omnibot_control.robot_control:main
+

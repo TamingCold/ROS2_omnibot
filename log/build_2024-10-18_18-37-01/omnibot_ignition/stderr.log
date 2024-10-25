@@ -1,0 +1,106 @@
+In file included from [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:17[m[K:
+[01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/include/omnibot_ignition/omni_drive.hpp:61:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf2_msgs[m[K’ was not declared in this scope
+   61 |   rclcpp::Publisher<[01;31m[Ktf2_msgs[m[K::msg::TFMessage>::SharedPtr tf_pub_;
+      |                     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/include/omnibot_ignition/omni_drive.hpp:61:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   61 |   rclcpp::Publisher<tf2_msgs::msg::TFMessage[01;31m[K>[m[K::SharedPtr tf_pub_;
+      |                                             [01;31m[K^[m[K
+[01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/include/omnibot_ignition/omni_drive.hpp:61:48:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   61 |   rclcpp::Publisher<tf2_msgs::msg::TFMessage>::[01;31m[KSharedPtr[m[K tf_pub_;
+      |                                                [01;31m[K^~~~~~~~~[m[K
+      |                                                         [32m[K;[m[K
+[01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/include/omnibot_ignition/omni_drive.hpp:61:58:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_pub_[m[K’ does not name a type
+   61 |   rclcpp::Publisher<tf2_msgs::msg::TFMessage>::SharedPtr [01;31m[Ktf_pub_[m[K;
+      |                                                          [01;31m[K^~~~~~~[m[K
+[01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/include/omnibot_ignition/omni_drive.hpp:68:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf2_msgs[m[K’ does not name a type
+   68 |   [01;31m[Ktf2_msgs[m[K::msg::TFMessage tf_pub_;
+      |   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/include/omnibot_ignition/omni_drive.hpp:79:48:[m[K [01;31m[Kerror: [m[K‘[01m[KPoseStamped[m[K’ in namespace ‘[01m[Kgeometry_msgs::msg[m[K’ does not name a type
+   79 |   void pose_callback(const geometry_msgs::msg::[01;31m[KPoseStamped[m[K::SharedPtr msg, const std::string &robot_name);
+      |                                                [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/include/omnibot_ignition/omni_drive.hpp:79:71:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+   79 |   void pose_callback(const geometry_msgs::msg::PoseStamped::SharedPtr [01;31m[Kmsg[m[K, const std::string &robot_name);
+      |                                                                       [01;31m[K^~~[m[K
+[01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/include/omnibot_ignition/omni_drive.hpp:79:70:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+   79 |   void pose_callback[34m[K([m[Kconst geometry_msgs::msg::PoseStamped::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K, const std::string &robot_name);
+      |                     [34m[K~[m[K                                                [01;31m[K^[m[K[32m[K~~~[m[K
+      |                                                                      [32m[K)[m[K
+[01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/include/omnibot_ignition/omni_drive.hpp:79:61:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   79 |   void pose_callback(const geometry_msgs::msg::PoseStamped::[01;31m[KSharedPtr[m[K msg, const std::string &robot_name);
+      |                                                             [01;31m[K^~~~~~~~~[m[K
+      |                                                                      [32m[K;[m[K
+[01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/include/omnibot_ignition/omni_drive.hpp:79:71:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+   79 |   void pose_callback(const geometry_msgs::msg::PoseStamped::SharedPtr [01;31m[Kmsg[m[K, const std::string &robot_name);
+      |                                                                       [01;31m[K^~~[m[K
+[01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:[m[K In constructor ‘[01m[KOmniDrive::OmniDrive()[m[K’:
+[01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:57:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_pub_[m[K’ was not declared in this scope
+   57 |   [01;31m[Ktf_pub_[m[K = this->create_publisher<tf2_msgs::msg::TFMessage>("/tf", qos);
+      |   [01;31m[K^~~~~~~[m[K
+[01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:57:36:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf2_msgs[m[K’ was not declared in this scope
+   57 |   tf_pub_ = this->create_publisher<[01;31m[Ktf2_msgs[m[K::msg::TFMessage>("/tf", qos);
+      |                                    [01;31m[K^~~~~~~~[m[K
+[01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:57:19:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   57 |   tf_pub_ = this->[01;31m[Kcreate_publisher<tf2_msgs::msg::TFMessage>[m[K("/tf", qos);
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:57:61:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KOmniDrive::create_publisher<<expression error> >(const char [4], rclcpp::QoS&)[m[K’
+   57 |   tf_pub_ = [01;31m[Kthis->create_publisher<tf2_msgs::msg::TFMessage>("/tf", qos)[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/include/omnibot_ignition/omni_drive.hpp:25[m[K,
+                 from [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:17[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+   73 | [01;36m[KNode[m[K::create_publisher(
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:57:61:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   57 |   tf_pub_ = [01;31m[Kthis->create_publisher<tf2_msgs::msg::TFMessage>("/tf", qos)[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:[m[K At global scope:
+[01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:86:57:[m[K [01;31m[Kerror: [m[K‘[01m[KPoseStamped[m[K’ in namespace ‘[01m[Kgeometry_msgs::msg[m[K’ does not name a type
+   86 | void OmniDrive::pose_callback(const geometry_msgs::msg::[01;31m[KPoseStamped[m[K::SharedPtr msg, const std::string &robot_name)
+      |                                                         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:86:80:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+   86 | void OmniDrive::pose_callback(const geometry_msgs::msg::PoseStamped::SharedPtr [01;31m[Kmsg[m[K, const std::string &robot_name)
+      |                                                                                [01;31m[K^~~[m[K
+[01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:86:79:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+   86 | void OmniDrive::pose_callback[34m[K([m[Kconst geometry_msgs::msg::PoseStamped::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K, const std::string &robot_name)
+      |                              [34m[K~[m[K                                                [01;31m[K^[m[K[32m[K~~~[m[K
+      |                                                                               [32m[K)[m[K
+[01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:86:80:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmsg[m[K’
+   86 | void OmniDrive::pose_callback(const geometry_msgs::msg::PoseStamped::SharedPtr [01;31m[Kmsg[m[K, const std::string &robot_name)
+      |                                                                                [01;31m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:39[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/include/omnibot_ignition/omni_drive.hpp:25[m[K,
+                 from [01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:17[m[K:
+/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp: In instantiation of ‘[01m[Kstruct rclcpp::function_traits::function_traits<std::_Bind<void (OmniDrive::*(OmniDrive*, std::_Placeholder<1>, const char*))(...)> >[m[K’:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:380:10:[m[K   recursively required by substitution of ‘[01m[Ktemplate<class MessageT, class CallbackT> struct rclcpp::detail::SubscriptionCallbackTypeHelper<MessageT, CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<_Tp>, const rclcpp::MessageInfo&)> >::value, void>::type> [with MessageT = geometry_msgs::msg::Pose_<std::allocator<void> >; CallbackT = std::_Bind<void (OmniDrive::*(OmniDrive*, std::_Placeholder<1>, const char*))(...)>][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:380:10:[m[K   required from ‘[01m[Krclcpp::AnySubscriptionCallback<MessageT, AllocatorT> rclcpp::AnySubscriptionCallback<MessageT, AllocatorT>::set(CallbackT) [with CallbackT = std::_Bind<void (OmniDrive::*(OmniDrive*, std::_Placeholder<1>, const char*))(...)>; MessageT = geometry_msgs::msg::Pose_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_factory.hpp:94:32:[m[K   required from ‘[01m[Krclcpp::SubscriptionFactory rclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<ROSMessageType> >) [with MessageT = geometry_msgs::msg::Pose_<std::allocator<void> >; CallbackT = std::_Bind<void (OmniDrive::*(OmniDrive*, std::_Placeholder<1>, const char*))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<geometry_msgs::msg::Pose_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Pose_<std::allocator<void> >, std::allocator<void> >; ROSMessageType = geometry_msgs::msg::Pose_<std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Pose_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:122:63:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::detail::create_subscription(NodeParametersT&, NodeTopicsT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = geometry_msgs::msg::Pose_<std::allocator<void> >; CallbackT = std::_Bind<void (OmniDrive::*(OmniDrive*, std::_Placeholder<1>, const char*))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<geometry_msgs::msg::Pose_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Pose_<std::allocator<void> >, std::allocator<void> >; NodeParametersT = rclcpp::Node; NodeTopicsT = rclcpp::Node; ROSMessageType = geometry_msgs::msg::Pose_<std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Pose_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:191:76:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::create_subscription(NodeT&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = geometry_msgs::msg::Pose_<std::allocator<void> >; CallbackT = std::_Bind<void (OmniDrive::*(OmniDrive*, std::_Placeholder<1>, const char*))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<geometry_msgs::msg::Pose_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Pose_<std::allocator<void> >, std::allocator<void> >; NodeT = rclcpp::Node; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Pose_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:99:47:[m[K   required from ‘[01m[Kstd::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = geometry_msgs::msg::Pose_<std::allocator<void> >; CallbackT = std::_Bind<void (OmniDrive::*(OmniDrive*, std::_Placeholder<1>, const char*))(...)>; AllocatorT = std::allocator<void>; SubscriptionT = rclcpp::Subscription<geometry_msgs::msg::Pose_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Pose_<std::allocator<void> >, std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Pose_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[01m[K/home/chongzhiw/Gazebo_Repo/ROS2_omnibot/src/omnibot_ignition/src/omni_drive.cpp:50:73:[m[K   required from here
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:51:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdecltype[m[K’ cannot resolve address of overloaded function
+   51 |   using [01;31m[Karguments[m[K = typename tuple_tail<
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:57:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdecltype[m[K’ cannot resolve address of overloaded function
+   57 |   using [01;31m[Kargument_type[m[K = typename std::tuple_element<N, arguments>::type;
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:59:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdecltype[m[K’ cannot resolve address of overloaded function
+   59 |   using [01;31m[Kreturn_type[m[K = typename function_traits<decltype( &FunctionT::operator())>::return_type;
+      |         [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/omni_drive.dir/build.make:76: CMakeFiles/omni_drive.dir/src/omni_drive.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/omni_drive.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
