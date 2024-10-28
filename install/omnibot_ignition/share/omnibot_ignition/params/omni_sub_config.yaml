@@ -1,4 +1,4 @@
-# ign tf to ROS tf
+# ign pose to ROS tf
 - ros_topic_name: "/robot_1/pose"
   gz_topic_name: "/model/robot_1/pose"
   ros_type_name: "tf2_msgs/msg/TFMessage"
@@ -8,6 +8,13 @@
 
 - ros_topic_name: "/robot_2/pose"
   gz_topic_name: "/model/robot_2/pose"
+  ros_type_name: "tf2_msgs/msg/TFMessage"
+  gz_type_name: "ignition.msgs.Pose_V"
+  direction: GZ_TO_ROS
+
+
+- ros_topic_name: "/robot_3/pose"
+  gz_topic_name: "/model/robot_3/pose"
   ros_type_name: "tf2_msgs/msg/TFMessage"
   gz_type_name: "ignition.msgs.Pose_V"
   direction: GZ_TO_ROS

@@ -37,6 +37,7 @@ OmniDrive::OmniDrive()
   ************************************************************/
   auto qos = rclcpp::QoS(rclcpp::KeepLast(10));
 
+
   // Initialise publishers
   front_vel_pub_ = this->create_publisher<std_msgs::msg::Float64>("front_vel", qos);
   left_vel_pub_ = this->create_publisher<std_msgs::msg::Float64>("left_vel", qos);
@@ -48,7 +49,7 @@ OmniDrive::OmniDrive()
 
   // New: Initialise subscribers for robot poses
   pose_sub_robot_ = this->create_subscription<tf2_msgs::msg::TFMessage>(
-    "pose", qos, std::bind(&OmniDrive::pose_callback, this, std::placeholders::_1));
+   "pose", qos, std::bind(&OmniDrive::pose_callback, this, std::placeholders::_1));
 
 
   // New: Initialise publisher for tf
@@ -152,10 +153,6 @@ void OmniDrive::update_callback()
   wf = (-vy - robot_r*wz)/wheel_r;
   wl = (-vx*cos_pi_6 - vy*sin_pi_6 + robot_r*wz)/wheel_r;
   wr = (vx*cos_pi_6 - vy*sin_pi_6 + robot_r*wz)/wheel_r;
-
-  //wf = (-vx + robot_r*wz)/wheel_r;
-  //wl = (-vx*sin_pi_6 + vy*cos_pi_6 + robot_r*wz)/wheel_r;
-  //wr = (-vx*sin_pi_6*5 + vy*cos_pi_6*5 + robot_r*wz)/wheel_r;
   
   update_joint_vels(wf, wl, wr);
 }

@@ -1,20 +1,74 @@
+
+# robot 1
+
+
 # ign topic subscribed by JointController plugin
-- ros_topic_name: "left_vel"
-  gz_topic_name: "left_vel"
+- ros_topic_name: "/robot_1/left_vel"
+  gz_topic_name: "/robot_1/left_vel"
   ros_type_name: "std_msgs/msg/Float64"
   gz_type_name: "ignition.msgs.Double"
   direction: ROS_TO_GZ
 
 # ign topic subscribed by JointController plugin
-- ros_topic_name: "right_vel"
-  gz_topic_name: "right_vel"
+- ros_topic_name: "/robot_1/right_vel"
+  gz_topic_name: "/robot_1/right_vel"
   ros_type_name: "std_msgs/msg/Float64"
   gz_type_name: "ignition.msgs.Double"
   direction: ROS_TO_GZ
 
   # ign topic subscribed by JointController plugin
-- ros_topic_name: "front_vel"
-  gz_topic_name: "front_vel"
+- ros_topic_name: "/robot_1/front_vel"
+  gz_topic_name: "/robot_1/front_vel"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "ignition.msgs.Double"
+  direction: ROS_TO_GZ
+
+
+# robot 2
+
+
+# ign topic subscribed by JointController plugin
+- ros_topic_name: "/robot_2/left_vel"
+  gz_topic_name: "/robot_2/left_vel"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "ignition.msgs.Double"
+  direction: ROS_TO_GZ
+
+# ign topic subscribed by JointController plugin
+- ros_topic_name: "/robot_2/right_vel"
+  gz_topic_name: "/robot_2/right_vel"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "ignition.msgs.Double"
+  direction: ROS_TO_GZ
+
+  # ign topic subscribed by JointController plugin
+- ros_topic_name: "/robot_2/front_vel"
+  gz_topic_name: "/robot_2/front_vel"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "ignition.msgs.Double"
+  direction: ROS_TO_GZ
+
+
+# robot 3
+
+
+# ign topic subscribed by JointController plugin
+- ros_topic_name: "/robot_3/left_vel"
+  gz_topic_name: "/robot_3/left_vel"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "ignition.msgs.Double"
+  direction: ROS_TO_GZ
+
+# ign topic subscribed by JointController plugin
+- ros_topic_name: "/robot_3/right_vel"
+  gz_topic_name: "/robot_3/right_vel"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "ignition.msgs.Double"
+  direction: ROS_TO_GZ
+
+  # ign topic subscribed by JointController plugin
+- ros_topic_name: "/robot_3/front_vel"
+  gz_topic_name: "/robot_3/front_vel"
   ros_type_name: "std_msgs/msg/Float64"
   gz_type_name: "ignition.msgs.Double"
   direction: ROS_TO_GZ

@@ -2069,19 +2069,20 @@
         </visual>
         </link>
         <plugin name='gz::sim::systems::JointController' filename='gz-sim-joint-controller-system'>
+
             <joint_name>base_link_rim_front_joint</joint_name>
             <initial_velocity>0.0</initial_velocity>
-            <topic>front_vel</topic>
+            <topic>robot_2/front_vel</topic>
         </plugin>
         <plugin name='gz::sim::systems::JointController' filename='gz-sim-joint-controller-system'>
             <joint_name>base_link_rim_right_joint</joint_name>
             <initial_velocity>0.0</initial_velocity>
-            <topic>right_vel</topic>
+            <topic>robot_2/right_vel</topic>
         </plugin>
         <plugin name='gz::sim::systems::JointController' filename='gz-sim-joint-controller-system'>
             <joint_name>base_link_rim_left_joint</joint_name>
             <initial_velocity>0.0</initial_velocity>
-            <topic>left_vel</topic>
+            <topic>robot_2/left_vel</topic>
         </plugin>
 
         

@@ -11,7 +11,7 @@ from math import hypot
 class RobotControlNode(Node):
     def __init__(self, robot_name, other_robots, var):
         super().__init__(f'{robot_name}_control')
-        #super().__init__(node_name)
+       
 
         self.position = None
 
@@ -38,7 +38,7 @@ class RobotControlNode(Node):
     def get_robot_position(self, robot_name):
         try:
             # Lookup transformation from world frame to robot's frame
-            trans = self.tf_buffer.lookup_transform(f'{robot_name}', 'empty', rclpy.time.Time())
+            trans = self.tf_buffer.lookup_transform('empty', f'{robot_name}', rclpy.time.Time())
             return (trans.transform.translation.x, trans.transform.translation.y)
         except Exception as e:
             self.get_logger().warn(f"Could not transform {robot_name}: {str(e)}")
@@ -58,6 +58,7 @@ class RobotControlNode(Node):
 
         for robot in self.other_robots:
             other_position = self.get_robot_position(robot)
+            #self.get_logger().info(f"{robot}'s position: ({other_position[0]}, {other_position[1]})")
             if other_position is not None:
                 avg_x += other_position[0]
                 avg_y += other_position[1]
@@ -72,12 +73,12 @@ class RobotControlNode(Node):
             distance_y = avg_y - position[1]
 
             velocity_msg = Twist()
-            #velocity_msg.linear.x = 0.05 * distance_x  
-            #velocity_msg.linear.y = 0.05 * distance_y  
+            velocity_msg.linear.x = 0.05 * distance_x  
+            velocity_msg.linear.y = 0.05 * distance_y  
 
-            velocity_msg.linear.x = var[0]
-            velocity_msg.linear.y = var[1]
-            velocity_msg.angular.z = 0.0
+            #velocity_msg.linear.x = var[0]
+            #velocity_msg.linear.y = var[1]
+            #velocity_msg.angular.z = 0.0
 
             self.velocity_publisher.publish(velocity_msg)
 
